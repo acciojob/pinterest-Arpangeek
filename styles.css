@@ -1,1 +1,81 @@
-/*  your css code here. If applicable */
+body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #fff;
+      padding: 40px;
+      box-sizing: border-box;
+    }
+
+    .hero-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    .hero-image {
+      width: 60%;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 10px 0 0 10px;
+    }
+
+    .hero-content {
+      width: 40%;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      border-radius: 0 10px 10px 0;
+      text-align: center;
+    }
+
+    .hero-content h1 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    .hero-content a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: #e60023;
+      color: white;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .hero-container {
+        flex-direction: column;
+      }
+
+      .hero-image,
+      .hero-content {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .hero-content {
+        padding: 20px;
+      }
+    }
